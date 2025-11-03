@@ -1,0 +1,267 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+} 
+
+/* h1 {
+    color: white;
+} */
+
+a {
+    text-decoration: none;
+} 
+
+li {
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+} 
+.active {
+    color: #fc036b; 
+    text-decoration: none;
+    font-weight: bold; 
+    cursor: pointer;
+
+} 
+body , html {
+    overflow-x: hidden;
+}
+
+/* Navbar */  
+.navbar { 
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex; 
+    width: 100%; 
+    justify-content: space-between; 
+    padding: 20px; 
+    color: whitesmoke;
+} 
+.nav-links{
+    display: flex;
+    align-items: center;
+}
+.nav-links li {
+    margin: 0 30px;  
+}
+
+header {
+    width: 100vw;
+    height: 100vh; 
+    background-image: url('./img/OIP\ \(1\).jpg'); 
+    background-position: bottom;
+    background-size: cover; 
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+} 
+.header-content {
+    margin-bottom: 150px; 
+    color: whitesmoke; 
+    text-align: center;
+} 
+.header-content h2{
+    font-size: 4vmin;
+} 
+
+.line {
+    width: 250px;
+    height: 4px;
+    background: #fc036b;
+    margin: 10px auto; 
+    border-radius: 5px;
+} 
+
+.header-content h1 {
+    font-size: 7vmin;
+    margin-top: 50px;
+    margin-bottom: 30px; 
+}
+
+.ctn {
+    padding: 8px 15px; 
+    background: #fc036b;  
+    border-radius: 30px; 
+    color: whitesmoke; 
+    cursor: pointer;
+}  
+.menu-btn { 
+    position: absolute; 
+    top: 30px;
+    right: 30px; 
+    width: 40px; 
+    cursor: pointer; 
+    display: none;
+} 
+
+/* Trasporters */  
+.automotive{
+    width: 100vw; 
+    margin: 80px auto;
+} 
+.title {
+    text-align: center;
+    font-size: 4vmin; 
+    color: #49497e;
+} 
+.row {
+    display: flex; 
+    align-items: center;  
+    width: 100vw; 
+    justify-content: space-between;  
+} 
+.row .col {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+.row .col img{
+    width: 80%; 
+    height: 80%;
+} 
+.automobiles .row {
+    margin-top: 50px;
+} 
+h4 {
+    font-size: 3vmin;
+    color: #484872;
+    margin: 20px auto;
+} 
+p {
+    color: #7c7c7c;   
+    padding: 0px 40px; 
+    cursor: pointer;
+} 
+.automobiles .ctn {
+    margin-top: 30px;
+} 
+
+.explore {
+    width: 100%; 
+    height: 100vh;
+    background-image: url(./img/IMG-20210825-WA0017.jpg);
+    background-position: center;
+    background-size: cover; 
+    background-repeat: no-repeat;  
+    display: flex; 
+    align-items: center;
+}
+.explore-content {
+    width: 60%; 
+    padding: 50px; 
+    color: whitesmoke; 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+} 
+.explore-content h1 {
+    font-size: 7vmin;  
+}  
+.explore-content .line {
+    margin-bottom : 50px;
+}
+.explore-content p {
+    color: rgb(221, 221, 221);
+} 
+.explore-content .ctn {
+    margin-top: 40px;
+}  
+
+/* .automotive {
+    width: 100vw;
+}
+.content-col {
+    width: 0%;   
+}  */
+.content-col {
+    width: 50%; 
+    margin-left: 50px;
+}
+.image-col {
+    width: 50%;
+}
+/* .image-col {
+    width: 50%;
+} */
+.automotive .image-gallery {
+    display: flex; 
+    flex-wrap: wrap;  
+    width: 100%;
+    align-items: center;
+} 
+.image-gallery img {
+    max-width: 300px; 
+    margin: 10px;
+} 
+.content-col h1 {
+    font-size: 7vmin; 
+    color: #484872;
+} 
+.content-col .line {
+    margin-left: -1px;
+} 
+.content-col p {
+    padding: 0;
+    margin: 30px auto;
+} 
+.content-col .ctn {
+    margin-left: -100px;
+} 
+
+.footer {
+    width: 100%;
+    min-height: 100px; 
+    padding: 20px 80px; 
+    margin: 0; 
+    background: #484872; 
+    text-align: center;
+} 
+.footer p {
+    color: whitesmoke;
+    margin: 20px auto;
+    padding: 20px auto;
+}
+
+/* Mobille device */ 
+@media only screen and (max-width:850px){
+    .menu-btn {
+        display: block;
+    }
+    .navbar {
+        padding: 0;  
+    } 
+    .logo {
+        position: absolute;
+        top: 30px;
+        left: 30px; 
+    } 
+    .nav-links {
+        flex-direction: column;  
+        width: 100%; 
+        height: 100vh; 
+        justify-content: center; 
+        background-color: #484872; 
+        margin-top: -980px; 
+        transition: all 0.5s ease;
+    }  
+    .mobile-menu {
+        margin-top: 0px; 
+        border-bottom-right-radius: 30%; 
+        /* border-top-left-radius: 30%; */ 
+    }
+    .nav-links li {
+        margin: 30px auto;
+    }  
+
+    /* AUTOMOTIVES */
+    .row {
+        flex-direction: column;
+    }
+} 
